@@ -5,8 +5,9 @@
   --amber:#d58248; --shadow:0 18px 38px rgba(20,27,40,.055),0 2px 8px rgba(20,27,40,.03);
 }
 html {scroll-behavior:smooth}
+* {box-sizing:border-box}
 body {background:radial-gradient(circle at 83% 9%,#edf3ff 0,transparent 24%),#fbfbfa;
-  color:var(--ink);font:16px/1.55 "Helvetica Neue",Arial,sans-serif;letter-spacing:-.012em}
+  color:var(--ink);font:16px/1.55 "Helvetica Neue",Arial,sans-serif;letter-spacing:-.012em;margin:0}
 main {max-width:1280px;padding:0 34px 140px}
 .menubar {height:43px;border-bottom:1px solid #ececeb;background:rgba(255,255,255,.88);
   display:flex;align-items:center;justify-content:space-between;padding:0 34px;
@@ -46,14 +47,16 @@ h1 i {font-style:normal;color:#668be1}
 .card strong {font-size:35px;letter-spacing:-.07em;color:#222529}
 .card p {font-size:12px;color:#787f85;margin:5px 0 0;max-width:30ch}
 .meter {height:7px;background:#e9edef;border-radius:30px;margin:0 0 12px}
-.meter span {background:#6f99e9}
+.meter span {display:block;height:100%;background:#6f99e9;border-radius:inherit}
 section {margin-top:82px;scroll-margin-top:25px}
 .section-head {display:flex;align-items:end;justify-content:space-between;gap:25px;margin-bottom:22px}
 .section-head h2 {font-size:clamp(30px,3vw,41px);letter-spacing:-.058em;line-height:1.03;margin:4px 0 0;font-weight:720}
 .section-head p {font-size:13px;color:#7a8086;max-width:310px;text-align:right;line-height:1.5;margin:0}
 .section-kicker {font-size:10px;letter-spacing:.15em;color:#8e969c;font-weight:700}
 .checklist,.findings,.table-wrap {background:#fff;border:1px solid #e9ebec;border-radius:19px;box-shadow:var(--shadow);overflow:hidden}
-.checklist li {padding:0 18px;align-items:flex-start;gap:9px;min-height:0;border-color:#eef0f0}
+.checklist,.findings {list-style:none;margin:0;padding:0}
+.checklist li {display:flex;padding:0 18px;align-items:flex-start;gap:9px;min-height:0;border-bottom:1px solid #eef0f0}
+.checklist li:last-child,.findings li:last-child {border-bottom:0}
 .checklist li:hover {background:#fafbfc}
 .box {width:50px;min-width:50px;font-size:23px;padding-top:7px;color:#476eae}
 .tick {width:44px;height:44px;font-size:24px;border-radius:11px;color:#476eae}
@@ -69,7 +72,7 @@ section {margin-top:82px;scroll-margin-top:25px}
 .task-detail {padding:0 55px 19px 0;display:grid;grid-template-columns:1fr 1fr;gap:25px}
 .task-detail p {font-size:13px;line-height:1.55;color:#626a70;max-width:52ch;margin:0}
 .task-detail b {display:block;color:#2d3338;font-size:11px;text-transform:uppercase;letter-spacing:.08em;margin-bottom:4px}
-.findings li {border-color:#f0f0ee;padding:15px 20px;gap:25px;font-size:13px;line-height:1.45}
+.findings li {display:flex;border-bottom:1px solid #f0f0ee;padding:15px 20px;gap:25px;font-size:13px;line-height:1.45}
 .findings strong {font-size:11px;text-transform:uppercase;letter-spacing:.08em;color:#9b693a;min-width:130px;padding-top:2px}
 .findings span {color:#555d63}
 .source-note {font-size:12px;margin:15px 3px 0}
@@ -86,9 +89,9 @@ section {margin-top:82px;scroll-margin-top:25px}
 #notice {font-size:12px;color:#606a72;min-height:1.2em}
 .empty-state {text-align:center;padding:35px!important;color:#858e95;font-size:13px}
 .table-wrap {overflow-x:auto}
-table {font-size:13px}
-th {background:#fafbfb;color:#747c82;font-size:10px;letter-spacing:.09em;text-transform:uppercase;border-bottom:1px solid #e9ebed;padding:17px 15px}
-td {border-color:#eff0f0;padding:14px 15px;color:#3b4247}
+table {width:100%;border-collapse:collapse;font-size:13px}
+th {background:#fafbfb;color:#747c82;font-size:10px;letter-spacing:.09em;text-transform:uppercase;text-align:left;border-bottom:1px solid #e9ebed;padding:17px 15px}
+td {border-bottom:1px solid #eff0f0;padding:14px 15px;color:#3b4247}
 tbody tr:hover {background:#fafcff}
 td:nth-child(2) {font-weight:700;color:#1f2529}
 td:nth-child(4) {color:#6f777d}
