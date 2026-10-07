@@ -1,0 +1,15 @@
+# Personal evidence and generated local state
+evidence.sqlite3
+evidence.sqlite3-*
+Proof inbox/
+Review queue.csv
+Review queue.html
+__pycache__/
+*.pyc
+
+# Deployment and local tooling
+.vercel/
+.env
+.env.*
+!.env.example
+node_modules/

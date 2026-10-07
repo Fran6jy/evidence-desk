@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#fbfbfa">
+  <meta name="description" content="A private, browser-based evidence checklist and review desk.">
+  <title>Evidence Desk</title>
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+  <div class="menubar"><div class="identity"><span class="mark">ED</span><span>Evidence Desk</span><span class="menu-separator">/</span><span class="menu-muted">Personal workspace</span></div><span class="menu-date" id="today"></span></div>
+  <main>
+    <header>
+      <div class="hero-copy">
+        <p class="eyebrow">EVIDENCE / PROJECT WORKSPACE</p>
+        <h1>Evidence<br><i>desk.</i></h1>
+        <p class="hero-description">A place to connect work, outcomes and supporting records before you call a task complete.</p>
+        <div class="hero-status"><span class="live-dot"></span><span id="lead-count">0 leads to review</span><span class="hero-divider"></span><span id="ready-count">0 documents ready</span></div>
+      </div>
+      <div class="hero-object" aria-hidden="true"><div class="folder-tab"></div><div class="folder-face"><span class="folder-label">CASE FILE<br><b id="folder-year">2026</b></span><span class="folder-count" id="folder-count">00</span></div><div class="folder-sheet sheet-one"></div><div class="folder-sheet sheet-two"></div></div>
+    </header>
+    <div class="cards" id="overview">
+      <div class="card"><h2>Steps complete</h2><div class="meter"><span id="task-bar"></span></div><strong id="task-progress">0/0</strong><p>Each task has a completion rule.</p></div>
+      <div class="card"><h2>Documents ready</h2><div class="meter"><span id="ready-bar"></span></div><strong id="evidence-progress">0/6</strong><p>Two for recognition and two for each optional criterion.</p></div>
+      <div class="card"><h2>Leads on file</h2><strong id="total-leads">0</strong><p>Import a CSV from the local scanner to review activity here.</p></div>
+    </div>
+    <section id="tasks">
+      <div class="section-head"><div><span class="section-kicker">01 / WORK PLAN</span><h2>What remains</h2></div><p>Open a task to see what to collect and when it is complete.</p></div>
+      <ul class="checklist" id="task-list"></ul>
+    </section>
+    <section id="checks">
+      <div class="section-head"><div><span class="section-kicker">02 / QUALITY CONTROL</span><h2>Before submission</h2></div><p>These checks identify gaps. A person still needs to assess authenticity and suitability.</p></div>
+      <ul class="findings" id="findings"></ul>
+      <p class="source-note"><a href="https://www.gov.uk/global-talent-digital-technology/documents-you-need-to-apply-endorsement" target="_blank" rel="noopener noreferrer">Official document guidance</a> · <a href="https://www.gov.uk/global-talent-digital-technology/eligibility" target="_blank" rel="noopener noreferrer">Eligibility criteria</a></p>
+    </section>
+    <section id="evidence">
+      <div class="section-head"><div><span class="section-kicker">03 / SOURCE FILES</span><h2>Evidence queue</h2></div><p>Import the local CSV. The file is read in this browser and is not uploaded to the site.</p></div>
+      <div class="web-actions"><input id="csv-import" type="file" accept=".csv,text/csv"><label class="action-button" for="csv-import" tabindex="0">Import review CSV</label><button class="action-button action-secondary" id="backup" type="button">Export browser backup</button><span id="notice" role="status"></span></div>
+      <div class="table-wrap"><table><thead><tr><th>Date</th><th>Project</th><th>Activity</th><th>Detail</th><th>Status</th><th>Criterion</th><th>Impact</th><th>Third-party proof</th><th>Source / action</th></tr></thead><tbody id="evidence-rows"></tbody></table></div>
+      <p class="source-note">This browser copy does not sync with the local SQLite tracker. Export a backup after edits. Original documents remain on your computer.</p>
+    </section>
+  </main>
+  <nav class="dock" aria-label="Page sections">
+    <a href="#overview"><span class="dock-icon icon-overview"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="3" width="8" height="8" rx="1.5"/><rect x="13" y="3" width="8" height="8" rx="1.5"/><rect x="3" y="13" width="8" height="8" rx="1.5"/><rect x="13" y="13" width="8" height="8" rx="1.5"/></svg></span><span>Overview</span></a>
+    <a href="#tasks"><span class="dock-icon icon-plan"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="4" y="4" width="16" height="16" rx="2"/><path d="m8 12 3 3 5-6"/></svg></span><span>Plan</span></a>
+    <a href="#checks"><span class="dock-icon icon-checks"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="8"/><path d="m8.5 12 2.5 2.5 4.5-5"/></svg></span><span>Checks</span></a>
+    <a href="#evidence"><span class="dock-icon icon-evidence"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 7V5a2 2 0 0 1 2-2h5l2 2h5a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2z"/><path d="M4 9h16"/></svg></span><span>Evidence</span></a>
+  </nav>
+  <script src="/app.js" defer></script>
+</body>
+</html>

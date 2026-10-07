@@ -1,0 +1,93 @@
+[
+  {
+    "id": "project_inventory",
+    "title": "Inventory local projects",
+    "mode": "Automatic",
+    "action": "The scanner lists dated Git activity and project links. Check which work was yours and which repositories are public.",
+    "doneWhen": "The local inventory has been generated. This is a lead list, not evidence of impact."
+  },
+  {
+    "id": "criteria_choice",
+    "title": "Choose your route and two optional criteria",
+    "mode": "Manual",
+    "action": "Decide whether the evidence supports exceptional talent or exceptional promise. Name the two additional criteria you will document, such as outside-work contribution and significant product contribution.",
+    "doneWhen": "Your chosen route and two criteria are written down, and every proposed document has one intended criterion."
+  },
+  {
+    "id": "project_outcomes",
+    "title": "Document project users, outcomes or usage figures",
+    "mode": "Manual",
+    "action": "For the strongest projects, record your exact role, launch dates, users or customers, and a measurable result. Save dated analytics exports, customer records, deployment records or comparable source material.",
+    "doneWhen": "At least one project has a clear contribution, dated outcome and a source that supports the numbers. A README or code commit alone is not an outcome."
+  },
+  {
+    "id": "external_validation",
+    "title": "Save independent project validation",
+    "mode": "Manual",
+    "action": "Look for named customer or peer feedback, public adoption, acknowledged open-source contributions, a credible event invitation or independent coverage that identifies your work.",
+    "doneWhen": "The original dated third-party source is saved and identifies you or your contribution. Self-written claims alone do not complete this task."
+  },
+  {
+    "id": "stem_activity",
+    "title": "Save STEM Ambassador activity confirmation",
+    "mode": "Manual",
+    "action": "After an actual session, record its date, organiser, your role, audience and what you taught. Save the organiser's confirmation, event page or attendance record and any feedback.",
+    "doneWhen": "A completed activity and a dated independent record are saved. An application or acceptance email by itself does not prove a contribution."
+  },
+  {
+    "id": "codebar_activity",
+    "title": "Save codebar activity confirmation",
+    "mode": "Manual",
+    "action": "For coaching, talks or Ambassador work, record the date, your role, topic and reach. Save a codebar event listing, organiser confirmation or participant feedback.",
+    "doneWhen": "At least one completed contribution has independent dated confirmation. A programme application is only a starting point."
+  },
+  {
+    "id": "cyf_activity",
+    "title": "Save CodeYourFuture activity confirmation",
+    "mode": "Manual",
+    "action": "For Tech Products or other volunteering, record the deliverable, your individual role and result. Save a project record, merged contribution and organiser or team confirmation.",
+    "doneWhen": "A completed contribution and independent confirmation are saved; an expression of interest alone is not enough."
+  },
+  {
+    "id": "mandatory_docs",
+    "title": "Review two recognition documents",
+    "mode": "Manual",
+    "action": "Select two different documents showing recognition by others as a leading or potential talent in digital technology within the relevant five-year period. Prefer named, dated third-party recognition tied to your own work.",
+    "doneWhen": "Two distinct documents are selected for recognition, each no more than three A4 sides, and neither is reused for another criterion."
+  },
+  {
+    "id": "optional_one_docs",
+    "title": "Review two documents for optional criterion one",
+    "mode": "Manual",
+    "action": "Match both documents to your first chosen criterion. Explain the work, your individual contribution and outcome; attach source material such as an organiser record or verified product result.",
+    "doneWhen": "Two distinct documents support the same selected criterion, each no more than three A4 sides, with no reuse across criteria."
+  },
+  {
+    "id": "optional_two_docs",
+    "title": "Review two documents for optional criterion two",
+    "mode": "Manual",
+    "action": "Match both documents to your second chosen criterion. If it is product contribution, show your role and significant technical, commercial or entrepreneurial result; if outside-work contribution, show actual activity and recognition.",
+    "doneWhen": "Two distinct documents support the second selected criterion, each no more than three A4 sides, with no reuse across criteria."
+  },
+  {
+    "id": "referee_letters",
+    "title": "Collect three suitable referee letters",
+    "mode": "Manual",
+    "action": "Choose three different established digital-technology experts who have known your work for at least 12 months. Each letter should give different examples, explain your achievements and UK contribution, and be signed and dated.",
+    "doneWhen": "Three letters specific to this application are saved with author credentials, contact details and the required content. Each letter is within three single A4 sides, excluding credentials and contact details."
+  },
+  {
+    "id": "cv",
+    "title": "Prepare the endorsement CV",
+    "mode": "Manual",
+    "action": "Include your career and relevant publication history. Check dates, roles and claims against the underlying records.",
+    "doneWhen": "A typed CV of no more than three A4 sides is final and fact-checked."
+  },
+  {
+    "id": "final_bundle",
+    "title": "Check and select the final evidence bundle",
+    "mode": "Manual",
+    "action": "Choose no more than ten criterion documents: at least two for recognition and two for each of the two selected optional criteria. Keep the CV and letters separate. If you were a founder or senior executive in the last five years, include proof of the business connection.",
+    "doneWhen": "Every document is dated, legible, no more than three A4 sides, mapped once to a criterion and checked against the current official rules before submission."
+  }
+]
